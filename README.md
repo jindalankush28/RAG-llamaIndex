@@ -41,9 +41,3 @@ LlamaIndex effectively captures and structures tabular data, ensuring readabilit
 - **Efficient Search & Retrieval**: Allows querying of extracted content for rapid access to relevant information.
 - **Markdown Formatting**: Enhances readability and preserves document structure.
 
-## Future Improvements
-- **Enhanced OCR Support**: Implement additional OCR techniques for better extraction from scanned PDFs.
-- **Natural Language Querying**: Integrate NLP-based question answering for improved interaction.
-- **Visualization Tools**: Develop dashboards to present extracted insights dynamically.
-
-
