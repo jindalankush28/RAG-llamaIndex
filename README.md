@@ -7,6 +7,7 @@ This project utilizes LlamaIndex to extract and structure data from the **EMRO T
 ### 1. **Data Ingestion**
 - The source document is loaded and parsed using **LlamaIndex**, which enables efficient indexing of large unstructured medical texts.
 - The text extraction process ensures that key sections such as **clinical guidelines, pathophysiology, and treatment protocols** are captured.
+- Original data: `dsa234.pdf`
 
 ### 2. **Text Processing & Parsing**
 - The LlamaIndex pipeline extracts sections from the document while preserving structure and meaning.
@@ -14,7 +15,7 @@ This project utilizes LlamaIndex to extract and structure data from the **EMRO T
 - **Tables** are identified and extracted separately to retain their structured information.
 
 ### 3. **Table Parsing**
-LlamaIndex effectively captures and structures tabular data, ensuring readability and accessibility. An example is the extracted **Table 7**, which presents details of antihypertensive drug preparations, their mechanisms of action, and dosage information:
+LlamaIndex API effectively captures and structures tabular data, ensuring readability and accessibility. An example is the extracted **Table 7**, which presents details of antihypertensive drug preparations, their mechanisms of action, and dosage information:
 
 #### **Table 7: Preparations, Mechanism of Action, and Main Features of Antihypertensive Drugs**
 
@@ -34,6 +35,12 @@ LlamaIndex effectively captures and structures tabular data, ensuring readabilit
 ### 4. **Indexing & Retrieval**
 - The processed data is stored in an **LlamaIndex vector database** for efficient retrieval.
 - Users can query the indexed data for **specific drug details, treatment recommendations, and pathophysiology insights**.
+
+### 5. **Load Llama 2 7b model**
+- Llama 2 is loaded from HuggingFace for generating responses of user queries.
+- GPU T4 is leveraged. Given compute restrictions model is loaded in 4 bit Quantization
+
+Final Parsed Outputs: `outputs.md`
 
 ## Key Features
 - **Automated Parsing**: Extracts and structures large-scale medical text efficiently.
